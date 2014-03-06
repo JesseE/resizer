@@ -110,6 +110,8 @@ $(function() {
 		//#file
 		//#resize
 		//#crop
+
+        //blah
     'use strict';
 
     var result = $('#result'),
