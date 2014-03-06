@@ -111,7 +111,7 @@ $(function() {
 		//#resize
 		//#crop
 
-        //blah
+        //blah blah
     'use strict';
 
     var result = $('#result'),
