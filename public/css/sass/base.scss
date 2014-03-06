@@ -84,7 +84,7 @@ img, object, iframe, video { max-width: 100%; width: auto; height: auto; }
 	LAYOUT
 	========================================================================== */
 
-.content { max-width: $siteInnerWidth; margin: 0 auto; }
+.content { /*max-width: $siteInnerWidth;*/ margin: 0 auto; }
 
 /* ==========================================================================
 	MODULES
@@ -92,6 +92,8 @@ img, object, iframe, video { max-width: 100%; width: auto; height: auto; }
 
 /* import modules here, eg. _header.scss, _article.scss, etc... */
 
+@import 'modules/resizeroutput';
+@import 'modules/resizerform';
 @import 'modules/cookie-info';
 @import 'modules/flash-message';
 
