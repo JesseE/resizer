@@ -1,26 +1,22 @@
 <div class="imageresizer">
-
 	<div class="draganddrop"><h4>Drag and Drop your files in this page</h4></div>
-
 		<input type="number" id="widthVal" placeholder="width" />
 		<input type="number" id="heightVal" placeholder="height" />
 		<!-- <button id="resize" ><span>resize</span></button> -->
 		<!-- <button id="crop"><span>crop</span></button> -->
-		<!-- <button id="download"><span>download</span></button> -->
 		<!-- <input type="file" id="files" name="files[]" multiple /> -->
-
 		<input type="file" id="file-input" multiple />
-		<p id="actions" style="display:none;">
-			<button type="button" id="edit">Edit</button>
-			<button type="button" id="crop">Crop</button>
+		<p id="actions">
+			<button type="button" id="resize">Resize</button>
+			<button type="button" id="edit">edit</button>
+			<button id="download"><span>download</span></button>
 		</p>
 		<h4>click your image to download</h4>
 </div>
 <div id="result" class="result">
-		    <p>This demo works only in browsers with support for the <a href="https://developer.mozilla.org/en/DOM/window.URL">URL</a> or <a href="https://developer.mozilla.org/en/DOM/FileReader">FileReader</a> API.</p>
 </div>
 <form class="outputfiles">
-	<output id="list"></output>
+ 	<div id="list"></div>
 	<div id="bucket"></div>
 </form>
 

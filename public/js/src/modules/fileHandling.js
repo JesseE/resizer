@@ -3,9 +3,11 @@
  *	Author: Jesse
 */
 	//selecting files to be uploaded
-	function handleFileSelect(evt) {
-
-	    var Files = evt.target.files;
+	function handleFileSelect(Files) {
+		// e.preventDefault();
+		// e = e.originalEvent;
+		// var target = e.dataTransfer || e.target;
+	 //    var Files = evt.target.files;
 	    var f, value;
 
 	    for (var i = 0; i <= Files.length; i++) {

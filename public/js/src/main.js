@@ -74,162 +74,98 @@ $(function() {
 		fm.show();
 	}
 
-	//event listeners
-	// document.getElementById('files').addEventListener('change', handleFileSelect, false);
+	var inputWidth = document.getElementById('widthVal');
+    var inputHeight = document.getElementById('heightVal');
+	var bucket = [];
+	var Databucket = [];
 
-	// document.getElementById('crop').addEventListener('click', function(){
-
-	// 	cropAction();
-
-	// }, false);
-
-	// document.getElementById('resize').addEventListener('click', function(){
-
-	// 	resizeAction();
-
-	// }, false);
-
-		//get png
-
-		//get jpeg
-
-		//if file is png or if file is jpeg
-
-		//detect file type
-
-		//add file type variable
-
-		//bug fix images crop when resizing
-
-		//drag and drop
-
-		// new shit
-		//	#images + i
-		//#canvas + i
-
-		//#file
-		//#resize
-		//#crop
-
-        //blah blah
-    'use strict';
-
-    var result = $('#result'),
-        //exifNode = $('#exif'),
-        thumbNode = $('#thumbnail'),
-        actionsNode = $('#actions'),
-        currentFile,
-        replaceResults = function (img) {
-            var content;
-            if (!(img.src || img instanceof HTMLCanvasElement)) {
-                content = $('<span>Loading image file failed</span>');
-            } else {
-            	//detect if image png or jpeg
-            	if( currentFile.type.match("image/png")){
-                content = $('<a target="_blank">').append(img)
-                    .attr('download', currentFile.name)
-                    .attr('href', img.src || img.toDataURL("image/png"));
-            	} else if(currentFile.type.match("image/jpeg")){
-            	content = $('<a target="_blank">').append(img)
-                    .attr('download', currentFile.name)
-                    .attr('href', img.src || img.toDataURL("image/jpeg"));
-            	}
-            }
-            result.children().replaceWith(content);
-            if (img.getContext) {
-                actionsNode.show();
-            }
-        },
-        displayImage = function (file, options) {
-            currentFile = file;
-            if (!loadImage(
-                    file,
-                    replaceResults,
-                    options
-                )) {
-                result.children().replaceWith(
-                    $('<span>Your browser does not support the URL or FileReader API.</span>')
-                );
-            }
-        },
-        dropChangeHandler = function (e) {
-            e.preventDefault();
-            e = e.originalEvent;
-            var target = e.dataTransfer || e.target,
-                file = target && target.files && target.files[0],
-                options = {
-                    maxWidth: result.width(),
-                    canvas: true
-                };
-            if (!file) {
-                return;
-            }
-            // exifNode.hide();
-            thumbNode.hide();
-            loadImage.parseMetaData(file, function (data) {
-                // if (data.exif) {
-                //     options.orientation = data.exif.get('Orientation');
-                //     displayExifData(data.exif);
-                // }
-                displayImage(file, options);
-            });
-        },
-        coordinates;
-
-
-    // Hide URL/FileReader API requirement message in capable browsers:
-    if (window.createObjectURL || window.URL || window.webkitURL || window.FileReader) {
-        result.children().hide();
-    }
-
-
-    $(document)
-        .on('dragover', function (e) {
-            e.preventDefault();
-            e = e.originalEvent;
-            e.dataTransfer.dropEffect = 'copy';
-        })
-        .on('drop', dropChangeHandler);
-
-
-    $('#file-input').on('change', dropChangeHandler);
-
-
-
-    $('#edit').on('click', function (event) {
-        event.preventDefault();
-        var imgNode = result.find('img, canvas'),
-            img = imgNode[0];
-        imgNode.Jcrop({
-            setSelect: [40, 40, img.width - 40, img.height - 40],
-            onSelect: function (coords) {
-                coordinates = coords;
-            },
-            onRelease: function () {
-                coordinates = null;
-            }
-        }).parent().on('click', function (event) {
-            event.preventDefault();
-        });
-    });
-
-
-    $('#crop').on('click', function (event) {
-        event.preventDefault();
-        var img = result.find('img, canvas')[0];
-        if (img && coordinates) {
-            replaceResults(loadImage.scale(img, {
-                left: coordinates.x,
-                top: coordinates.y,
-                sourceWidth: coordinates.w,
-                sourceHeight: coordinates.h,
-                maxWidth: result.width()
-            }));
-            coordinates = null;
+    document.getElementById("file-input").onchange = function(e){
+        for(var i = 0, len = e.target.files.length; i < len; i++){
+            var files = e.target.files[i];
+            bucket.push(files);
         }
-    });
+    };
 
+    document.getElementById("resize").onclick = function(){
+    	bucketCollection(bucket);
+    };
 
+    document.getElementById('download').onclick = function(){
+    	toZip(Databucket);
+    };
 
+    function bucketCollection(bucket, i) {
+    	for(var i = 0, len = bucket.length; i < len; i++){
+    		resizeImages(bucket, i);
+    	}
+    }
+    function resizeImages(bucket, i) {
+    	//console.log(bucket[i]);
+	    		loadImage(
+		    		bucket[i],
+		    		function(newImg){
+		    			document.getElementById('bucket').appendChild(newImg).setAttribute('id', 'canvas'+i);
+		    			collectionImages(newImg, i);
+		    		},
+		    		{
+		    			maxWidth: inputWidth.value,
+		    			maxHeight: inputHeight.value,
+		    			canvas: true
+		    		}
+		    	);
+    }
+    function collectionImages(newImg, i){
 
+    	// get the canvas elements
+    	var Canvas = document.getElementById('canvas'+ i);
+
+		//canvas image to data string
+		var Dataurl = Canvas.toDataURL("images/png");
+
+		//collection data urls
+		Databucket.push(Dataurl);
+		//get all Data urls and push them into the bucket
+	}
+	function toZip () {
+		var zip = new JSZip();
+		//console.log(Databucket);
+		for(var i = 0, len = Databucket.length; i < len; i++) {
+			var strings = Databucket[i].substr(Databucket[i].indexOf(',')+1);
+			var name = 'canvas'+i;
+			zip.file(name + '.png', strings, {base64: true});
+		}
+		var url = window.URL.createObjectURL(zip.generate({type: "blob"}));
+		location.href = url;
+		return;
+	}
 });
+
+//all images are blob urls
+//zip de blob urls
+
+//download de zip
+
+	//todo
+		//upload image
+			//append to list id
+		//resize image
+			//error
+			//append to bucket id
+		//download new image
+
+
+
+    //test
+
+    //how long will it take to scale 104 images to 200 x 200
+        // 200mb 1min 53 sec
+        // 100mb
+
+     //how long will it take to scale 104 images to 400 x 400
+
+    //how long will it take to scale 104 images to 600 x 600
+
+     //how long will it take to scale 104 images to 800 x 800
+
+      //how long will it take to scale 104 images to 1000 x 1000
+

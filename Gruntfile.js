@@ -86,9 +86,7 @@ module.exports = function(grunt) {
 			paths.js_garp + 'front/cookies.js'
 		],
 		'src': [
-			paths.js_src + 'main.js',
-			paths.js_src + '/modules/**/*.js',
-
+			paths.js_src + 'main.js'
 		],
 		'modernizr': [ paths.js_src + 'modernizr.js' ],
 		'jquery': [ paths.js_src + 'jquery.js' ]
@@ -173,7 +171,7 @@ module.exports = function(grunt) {
 		    // Have custom Modernizr tests? Add paths to their location here.
 		    "customTests" : []
 		},
-		/*jshint: {
+		jshint: {
 			main: build_stack.src,
 			options: {
 				curly: true,
@@ -183,7 +181,7 @@ module.exports = function(grunt) {
 				browser: true,
 				"-W099": true
 			}
-		},*/
+		},
 		documentWritify: {
 			dev: {
 				files: [
