@@ -77,7 +77,7 @@ $(function() {
 	var inputWidth = document.getElementById('widthVal');
     var inputHeight = document.getElementById('heightVal');
 	var bucket = [];
-	var Databucket = [];
+	var dataBucket = [];
 
     document.getElementById("file-input").onchange = function(e){
         for(var i = 0, len = e.target.files.length; i < len; i++){
@@ -89,11 +89,11 @@ $(function() {
     	bucketCollection(bucket);
     };
     document.getElementById('download').onclick = function(){
-    	toZip(Databucket);
+    	toZip(dataBucket);
     };
     function bucketCollection(bucket, i) {
-    	for(var i = 0, len = bucket.length; i < len; i++){
-    		resizeImages(bucket, i);
+    	for(var e = 0, len = bucket.length; e < len; e++){
+    		resizeImages(bucket, e);
     	}
     }
     function resizeImages(bucket, i) {
@@ -115,24 +115,20 @@ $(function() {
     	var Canvas = document.getElementById('canvas'+ i);
     	if(bucket[i].type=="image/jpeg"){
     		var DataURLJPG = Canvas.toDataURL("image/jpeg");
-    		Databucket.push(DataURLJPG);
+    		dataBucket.push(DataURLJPG);
     	} else if(bucket[i].type=="image/png"){
     		var DataURLPNG = Canvas.toDataURL("image/png");
-    		Databucket.push(DataURLPNG);
-    	} else if(bucket[i].type=="image/gif"){
-    		var DataURLGIF = Canvas.toDataURL("image/gif");
-    		Databucket.push(DataURLGIF);
-    	}
-	}
-	function detectFileType(){
-		for(var i = 0, len = bucket.length; i < len; i++) {
-		}
+    		dataBucket.push(DataURLPNG);
+    	} else {
+    	 	var DataURLALT = Canvas.toDataURL("image/png");
+    	 	dataBucket.push(DataURLALT);
+    	 }
 	}
 	function toZip () {
 		var zip = new JSZip();
-		//console.log(Databucket);
-		for(var i = 0, len = Databucket.length; i < len; i++) {
-			var strings = Databucket[i].substr(Databucket[i].indexOf(',')+1);
+		console.log(dataBucket);
+		for(var i = 0, len = dataBucket.length; i < len; i++) {
+			var strings = dataBucket[i].substr(dataBucket[i].indexOf(',')+1);
 			var name = bucket[i].name;
 			zip.file(name, strings, {base64: true});
 		}
