@@ -3,37 +3,17 @@
  *	Author: Jesse
 */
 
-	//savable zip function
-	function savable(aSaveMultiData, bSaveMultiData, i) {
-
+//return a zipped version of all the transformed images
+	function toZip() {
+		console.log(dataStorage);
 		var zip = new JSZip();
-
-		if(aSaveMultiData){
-			for(var i = 0, f; f = aSaveMultiData[i]; i++){
-
-				var aSavable = new Image();
-				aSavable.src = aSaveMultiData[i];
-				var aName = 'canvas'+i;
-				zip.file(aName+".png", aSavable.src.substr(aSavable.src.indexOf(',')+1), {base64: true});
-				}
-		}else if(bSaveMultiData) {
-			for(var i = 0, f; f = bSaveMultiData[i]; i++){
-
-				var bSavable = new Image();
-				bSavable.src = bSaveMultiData[i];
-				var bName = 'canvas'+i;
-				zip.file(bName+".png", bSavable.src.substr(bSavable.src.indexOf(',')+1), {base64: true});
-
-			}
+		for(var i = 0, len = dataStorage.length; i < len; i++){
+			var strings = dataStorage[i].substr(dataStorage[i].indexOf(',')+1);
+			console.log(strings);
+			var name = storage[i].name;
+			zip.file(name, strings, {base64: true});
 		}
-
-		getDownloadZip(zip);
-
-	}
-	//download zip prompt
-	function getDownloadZip(zip) {
-
 		var url = window.URL.createObjectURL(zip.generate({type: "blob"}));
 		location.href = url;
-
+		return;
 	}

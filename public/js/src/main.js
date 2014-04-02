@@ -73,67 +73,12 @@ $(function() {
 		var fm = new Garp.FlashMessage(cookie_msg);
 		fm.show();
 	}
+	//problem: when selected items are resized you will need to refresh the page in order to use de resize tool again
+	//suggestions:
+	//	-thinks of a way to reset to null
+	// 	-count images after added with file input
 
-	var inputWidth = document.getElementById('widthVal');
-    var inputHeight = document.getElementById('heightVal');
-	var bucket = [];
-	var dataBucket = [];
+	//clipboard functie gebruiken voor testen
+	//minder handeleing voor testen
 
-    document.getElementById("file-input").onchange = function(e){
-        for(var i = 0, len = e.target.files.length; i < len; i++){
-            var files = e.target.files[i];
-            bucket.push(files);
-        }
-    };
-    document.getElementById("resize").onclick = function(){
-    	bucketCollection(bucket);
-    };
-    document.getElementById('download').onclick = function(){
-    	toZip(dataBucket);
-    };
-    function bucketCollection(bucket, i) {
-    	for(var e = 0, len = bucket.length; e < len; e++){
-    		resizeImages(bucket, e);
-    	}
-    }
-    function resizeImages(bucket, i) {
-    	//console.log(bucket[i]);
-    		loadImage(
-	    		bucket[i],
-	    		function(newImg){
-	    			document.getElementById('bucket').appendChild(newImg).setAttribute('id', 'canvas'+i);
-	    			collectionImages(newImg, i, bucket[i].type);
-	    		},
-	    		{
-	    			maxWidth: inputWidth.value,
-	    			maxHeight: inputHeight.value,
-	    			canvas: true
-	    		}
-	    	);
-    }
-    function collectionImages(newImg, i){
-    	var Canvas = document.getElementById('canvas'+ i);
-    	if(bucket[i].type=="image/jpeg"){
-    		var DataURLJPG = Canvas.toDataURL("image/jpeg");
-    		dataBucket.push(DataURLJPG);
-    	} else if(bucket[i].type=="image/png"){
-    		var DataURLPNG = Canvas.toDataURL("image/png");
-    		dataBucket.push(DataURLPNG);
-    	} else {
-    	 	var DataURLALT = Canvas.toDataURL("image/png");
-    	 	dataBucket.push(DataURLALT);
-    	 }
-	}
-	function toZip () {
-		var zip = new JSZip();
-		console.log(dataBucket);
-		for(var i = 0, len = dataBucket.length; i < len; i++) {
-			var strings = dataBucket[i].substr(dataBucket[i].indexOf(',')+1);
-			var name = bucket[i].name;
-			zip.file(name, strings, {base64: true});
-		}
-		var url = window.URL.createObjectURL(zip.generate({type: "blob"}));
-		location.href = url;
-		return;
-	}
 });

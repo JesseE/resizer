@@ -2,16 +2,18 @@
  *	Adding global variables
  *	Author: Jesse
 */
-	//globals
-	var bucket = document.getElementById('bucket');
-	var canvas = document.getElementsByTagName('canvas');
-
-	var widthButton = document.getElementById('widthVal');
-	var heightButton = document.getElementById('heightVal');
-
-	var files = document.getElementsByTagName('img');
-
-	var resizeButton = document.getElementById("resize");
-	var cropButton = document.getElementById("crop");
-
-	var upload = document.getElementById("files");
+	// creating globals to be called in the desired functions
+	var inputWidth = document.getElementById('widthVal');
+    var inputHeight = document.getElementById('heightVal');
+	var storage = [];
+	var dataStorage = [];
+	// handlers to activate desired functions
+    document.getElementById("file-input").onchange = function(e){
+        uploadCollection(e);
+    };
+    document.getElementById("resize").onclick = function(){
+    	originalCollection(storage);
+    };
+    document.getElementById('download').onclick = function(){
+    	toZip(dataStorage);
+    };
