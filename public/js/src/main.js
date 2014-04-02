@@ -85,15 +85,12 @@ $(function() {
             bucket.push(files);
         }
     };
-
     document.getElementById("resize").onclick = function(){
     	bucketCollection(bucket);
     };
-
     document.getElementById('download').onclick = function(){
     	toZip(Databucket);
     };
-
     function bucketCollection(bucket, i) {
     	for(var i = 0, len = bucket.length; i < len; i++){
     		resizeImages(bucket, i);
@@ -101,71 +98,46 @@ $(function() {
     }
     function resizeImages(bucket, i) {
     	//console.log(bucket[i]);
-	    		loadImage(
-		    		bucket[i],
-		    		function(newImg){
-		    			document.getElementById('bucket').appendChild(newImg).setAttribute('id', 'canvas'+i);
-		    			collectionImages(newImg, i);
-		    		},
-		    		{
-		    			maxWidth: inputWidth.value,
-		    			maxHeight: inputHeight.value,
-		    			canvas: true
-		    		}
-		    	);
+    		loadImage(
+	    		bucket[i],
+	    		function(newImg){
+	    			document.getElementById('bucket').appendChild(newImg).setAttribute('id', 'canvas'+i);
+	    			collectionImages(newImg, i, bucket[i].type);
+	    		},
+	    		{
+	    			maxWidth: inputWidth.value,
+	    			maxHeight: inputHeight.value,
+	    			canvas: true
+	    		}
+	    	);
     }
     function collectionImages(newImg, i){
-
-    	// get the canvas elements
     	var Canvas = document.getElementById('canvas'+ i);
-
-		//canvas image to data string
-		var Dataurl = Canvas.toDataURL("images/png");
-
-		//collection data urls
-		Databucket.push(Dataurl);
-		//get all Data urls and push them into the bucket
+    	if(bucket[i].type=="image/jpeg"){
+    		var DataURLJPG = Canvas.toDataURL("image/jpeg");
+    		Databucket.push(DataURLJPG);
+    	} else if(bucket[i].type=="image/png"){
+    		var DataURLPNG = Canvas.toDataURL("image/png");
+    		Databucket.push(DataURLPNG);
+    	} else if(bucket[i].type=="image/gif"){
+    		var DataURLGIF = Canvas.toDataURL("image/gif");
+    		Databucket.push(DataURLGIF);
+    	}
+	}
+	function detectFileType(){
+		for(var i = 0, len = bucket.length; i < len; i++) {
+		}
 	}
 	function toZip () {
 		var zip = new JSZip();
 		//console.log(Databucket);
 		for(var i = 0, len = Databucket.length; i < len; i++) {
 			var strings = Databucket[i].substr(Databucket[i].indexOf(',')+1);
-			var name = 'canvas'+i;
-			zip.file(name + '.png', strings, {base64: true});
+			var name = bucket[i].name;
+			zip.file(name, strings, {base64: true});
 		}
 		var url = window.URL.createObjectURL(zip.generate({type: "blob"}));
 		location.href = url;
 		return;
 	}
 });
-
-//all images are blob urls
-//zip de blob urls
-
-//download de zip
-
-	//todo
-		//upload image
-			//append to list id
-		//resize image
-			//error
-			//append to bucket id
-		//download new image
-
-
-
-    //test
-
-    //how long will it take to scale 104 images to 200 x 200
-        // 200mb 1min 53 sec
-        // 100mb
-
-     //how long will it take to scale 104 images to 400 x 400
-
-    //how long will it take to scale 104 images to 600 x 600
-
-     //how long will it take to scale 104 images to 800 x 800
-
-      //how long will it take to scale 104 images to 1000 x 1000
-
