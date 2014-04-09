@@ -75,7 +75,7 @@
 	<?php
 		$this->script()->src($this->config()->assets->js->root . '/main.js');
 		$this->script()->src($this->config()->assets->js->root . '/jszip.min.js');
-		$this->script()->src($this->config()->assets->js->root . '/canvas-to-blob.min.js');
+
 		echo $this->script()->render();
 		if ($browseboxConfig = $this->browsebox()->config()):
 			echo $browseboxConfig;

@@ -6,7 +6,7 @@ function uploadCollection(e){
     }
 }
 //when resize function needs to be called collect al the images first
-function originalCollection(storage, i) {
+function originalCollection(storage) {
 	for(var i = 0, len = storage.length; i < len; i++){
 		manipulateImages(storage, i);
 	}

@@ -86,7 +86,8 @@ module.exports = function(grunt) {
 			paths.js_garp + 'front/cookies.js'
 		],
 		'src': [
-			paths.js_src + 'main.js'
+			paths.js_src + 'main.js',
+			paths.js_src + 'modules/*.js'
 		],
 		'modernizr': [ paths.js_src + 'modernizr.js' ],
 		'jquery': [ paths.js_src + 'jquery.js' ]

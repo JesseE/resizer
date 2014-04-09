@@ -1,17 +1,15 @@
 <div class="imageresizer">
-	<div class="draganddrop"><h4>Drag and Drop your files in this page</h4></div>
-		<input type="number" id="widthVal" placeholder="width" />
-		<input type="number" id="heightVal" placeholder="height" />
-		<!-- <button id="resize" ><span>resize</span></button> -->
-		<!-- <button id="crop"><span>crop</span></button> -->
-		<!-- <input type="file" id="files" name="files[]" multiple /> -->
-		<input type="file" id="file-input" multiple />
-		<p id="actions">
-			<button type="button" id="resize">Resize</button>
-			<button type="button" id="edit">edit</button>
-			<button id="download"><span>download</span></button>
-		</p>
-		<h4>click your image to download</h4>
+	<div class="block">
+	<div class="draganddrop"><p>Drag and Drop the Files</p></div>
+	</div>
+	<input type="file" id="file-input" multiple />
+	<input type="number" id="widthVal" placeholder="width" />
+	<input type="number" id="heightVal" placeholder="height" />
+	<p id="actions">
+		<button type="button" id="resize">resize</button>
+		<button type="button" id="edit">edit</button>
+		<button id="download"><span>download</span></button>
+	</p>
 </div>
 <div id="result" class="result">
 </div>
@@ -19,5 +17,4 @@
  	<div id="list"></div>
 	<div id="storage"></div>
 </form>
-
 

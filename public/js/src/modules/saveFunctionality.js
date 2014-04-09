@@ -2,7 +2,6 @@
  *	Adding save in zip function
  *	Author: Jesse
 */
-
 //return a zipped version of all the transformed images
 	function toZip() {
 		console.log(dataStorage);
