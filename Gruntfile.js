@@ -172,17 +172,17 @@ module.exports = function(grunt) {
 		    // Have custom Modernizr tests? Add paths to their location here.
 		    "customTests" : []
 		},
-		jshint: {
-			main: build_stack.src,
-			options: {
-				curly: true,
-				latedef: true,
-				eqnull: true,
-				trailing: false,
-				browser: true,
-				"-W099": true
-			}
-		},
+		// jshint: {
+		// 	main: build_stack.src,
+		// 	options: {
+		// 		curly: true,
+		// 		latedef: true,
+		// 		eqnull: true,
+		// 		trailing: false,
+		// 		browser: true,
+		// 		"-W099": true
+		// 	}
+		// },
 		documentWritify: {
 			dev: {
 				files: [

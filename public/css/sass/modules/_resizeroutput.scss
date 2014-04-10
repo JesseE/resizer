@@ -9,8 +9,10 @@ canvas{
     -ms-interpolation-mode: nearest-neighbor;   // IE (non standard naming)
     float:left;margin: 5px;border-top: 10px black;
 }
-.imageresizer{position: fixed;height: 100%;width: 20%;background: white;}
+p{font-size: 16px;color:white;}
+.imageresizer{z-index:1;position: fixed;height: 100%;width: 15%;background: #fab914;box-shadow: 1px 0px 10px #000;}
+.logo{position:fixed;top:80%;}
 img{float:left;margin: 5px;}
 #bucket{float: left;width: 100%;border-top: 3px solid white;}
-#result{float: left;width: 100%;border-top: 3px solid white;}
+#result{float: left;width: 100%;}
 #thumbnail{float: left;width: 100%;border-top: 3px solid white;}
