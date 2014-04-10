@@ -8,9 +8,6 @@
     		loadImage(
 	    		storage[i],
 	    		function(newImg){
-
-
-
 	    			document.getElementById('storage').appendChild(newImg).setAttribute('id', 'canvas'+i);
 	    			detectFileType(newImg, i, storage[i].type);
 	    		},
