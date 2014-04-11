@@ -10,7 +10,7 @@ var dataStorage = [];
 
 // handlers to activate desired functions
 document.getElementById("file-input").onchange = function(e){
-	$('#imagecollection').css({"left":"15%"});
+	$('.imagecollection').css({"left":"15%"});
 	handleFileSelect(e);
 	collectionClear();
     uploadCollection(e);
@@ -22,8 +22,8 @@ document.getElementById("resize").onclick = function(){
 };
 document.getElementById("edit").onclick = function(){
 	animateCss();
-	var cropYeah = true;
-	originalCollection(storage, cropYeah);
+	var cropFunction = true;
+	originalCollection(storage, cropFunction);
 };
 document.getElementById('download').onclick = function(){
 	toZip(dataStorage);

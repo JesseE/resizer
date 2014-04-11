@@ -19,7 +19,7 @@ function manipulateImages(storage, i) {
 		}
 	);
 }
-function cropYou(storage, i){
+function cropImage(storage, i){
 	loadImage(
 		storage[i],
 		function(newImg){

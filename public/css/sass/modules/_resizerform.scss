@@ -1,11 +1,13 @@
 /*form controls / menu */
-.imageresizer__block{ display: inline-block; width: 100%; height: 200px;}
-.imageresizer__input{}
+.imageresizer--intro{ border-radius: 20px;left: 30%;top: 10%;position: absolute;width: 50%;/* z-index: 0; *//* margin: auto; */background: #fab914;height: 50%;}
+.imageresizer__block{  width: 100%; height: 200px;}
+.imageresizer__block img{margin: 0;padding: 20px;}
+.imageresizer__input{ margin-top:35px;}
 .imageresizer__actions{}
 .imagecollection__list{}
 .outputfiles__storage{}
 .dnd:before{ vertical-align: middle; content: ''; display: inline-block; height: 200px; margin-right: -0.25em;}
-.dnd { width: 95%;height: 200px;margin: 5px; border: 2px dashed #FFF; text-align: center;}
+.dnd {width: 90%;height: 100%;margin: auto;border: 2px dashed #FFF;text-align: center;margin-top: 25px;}
 .outputfiles{ float: right; width: 75%;}
 #imagecollection{ position: absolute; left: 15%; width: 15%; transition: all 0.4s cubic-bezier(0.17, 0.67, 0, 1);}
 #imagecollection img { width: 100%; margin: 5px; padding: 5px; background: #fab914; box-shadow: 1px 0 5px #000;}
@@ -15,8 +17,8 @@
 #to-top{ width: 125px; height: 35px; position: fixed; bottom: 10px; right: 38%; background: #fab914;}
 #to-top > span{ text-align: center; display: block; padding: 5px; color: #FFF;}
 form .input{float: left;}
-button{display:block; margin: 5px auto;width: 90%;height: 40px;background: #141414;border:none;outline:none;border-radius: 6px;color: #FFF;}
+button{display:block; margin: 5px auto;width: 90%;height: 40px;background: #fab914;border:1px solid #FFF;outline:none;border-radius: 6px;color: #FFF;}
 input{display:block; margin: 10px auto;width: 90%;height: 40px;padding: 7px;outline:none;border-radius: 10px;}
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {-webkit-appearance: none;}
-input[type=number]{border:none;box-shadow:1px 1px 5px #000;}
+input[type=number]{border:none;box-shadow: inset 0px 1px 5px #000;}

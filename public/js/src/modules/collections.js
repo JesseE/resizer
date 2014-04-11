@@ -18,10 +18,10 @@ function uploadCollection(e){
     }
 }
 //when resize function needs to be called collect al the images first
-function originalCollection(storage, cropYeah) {
-	if(cropYeah === true){
+function originalCollection(storage, cropFunction) {
+	if(cropFunction === true){
 		for(var i = 0, len = storage.length; i < len; i++){
-			cropYou(storage, i);
+			cropImage(storage, i);
 		}
 	} else {
 		for(var i = 0, len = storage.length; i < len; i++){
@@ -52,7 +52,6 @@ function handleFileSelect(e) {
       // Read in the image file as a data URL.
       reader.readAsDataURL(f);
     }
-
  }
  function templating(newImg, storage, i) {
 	document.getElementById('outputfiles__storage').appendChild(newImg).setAttribute('id', 'canvas'+i);
