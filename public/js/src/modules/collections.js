@@ -1,3 +1,6 @@
+function animateCss(){
+	$('#imagecollection').css({"left":"5%"});
+}
 //methodes to clear collection
 function collectionClear(){
 	$("canvas").remove();
@@ -15,9 +18,15 @@ function uploadCollection(e){
     }
 }
 //when resize function needs to be called collect al the images first
-function originalCollection(storage) {
-	for(var i = 0, len = storage.length; i < len; i++){
-		manipulateImages(storage, i);
+function originalCollection(storage, cropYeah) {
+	if(cropYeah === true){
+		for(var i = 0, len = storage.length; i < len; i++){
+			cropYou(storage, i);
+		}
+	} else {
+		for(var i = 0, len = storage.length; i < len; i++){
+			manipulateImages(storage, i);
+		}
 	}
 }
 function handleFileSelect(e) {
@@ -37,7 +46,7 @@ function handleFileSelect(e) {
           var span = document.createElement('div');
           span.innerHTML = ['<img src="', e.target.result,
                             '" title="', escape(theFile.name), '"/>'].join('');
-          document.getElementById('list').insertBefore(span, null);
+          document.getElementById('imagecollection__list').insertBefore(span, null);
         };
       })(f);
       // Read in the image file as a data URL.
@@ -45,3 +54,8 @@ function handleFileSelect(e) {
     }
 
  }
+ function templating(newImg, storage) {
+	document.getElementById('outputfiles__storage').appendChild(newImg).setAttribute('id', 'canvas'+i);
+	detectFileType(newImg, i, storage[i].type);
+	console.log("cropped");
+}

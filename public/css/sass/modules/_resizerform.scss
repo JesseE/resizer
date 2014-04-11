@@ -1,5 +1,9 @@
 /*form controls / menu */
-.block{ display: inline-block; width: 100%; height: 200px;}
+.imageresizer__block{ display: inline-block; width: 100%; height: 200px;}
+.imageresizer__input{}
+.imageresizer__actions{}
+.imagecollection__list{}
+.outputfiles__storage{}
 .dnd:before{ vertical-align: middle; content: ''; display: inline-block; height: 200px; margin-right: -0.25em;}
 .dnd { width: 95%;height: 200px;margin: 5px; border: 2px dashed #FFF; text-align: center;}
 .outputfiles{ float: right; width: 75%;}

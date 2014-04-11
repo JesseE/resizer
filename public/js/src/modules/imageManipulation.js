@@ -9,13 +9,26 @@ function manipulateImages(storage, i) {
 	loadImage(
 		storage[i],
 		function(newImg){
-			document.getElementById('storage').appendChild(newImg).setAttribute('id', 'canvas'+i);
-			detectFileType(newImg, i, storage[i].type);
+			templating(newImg, storage);
 		},
 		{
 			minWidth: inputWidth.value,
 			maxHeight: inputHeight.value,
 			contain: true,
+			canvas:true
+		}
+	);
+}
+function cropYou(storage, i){
+	loadImage(
+		storage[i],
+		function(newImg){
+			templating(newImg, storage);
+		},
+		{
+			maxWidth: inputWidth.value,
+			maxHeight: inputHeight.value,
+			crop:true,
 			canvas:true
 		}
 	);

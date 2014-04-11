@@ -1,22 +1,24 @@
 <div class="imageresizer">
-	<div class="block">
-	<div class="dnd"><p>Drag and Drop the Files</p></div>
+	<div class="imageresizer__block">
+		<div class="dnd"><p>Drag and Drop the Files</p></div>
 	</div>
+	<div class="imageresizer__input">
 	<input type="file" id="file-input" multiple />
 	<input type="number" id="widthVal" placeholder="width" />
 	<input type="number" id="heightVal" placeholder="height" />
-	<p id="actions">
+	</div>
+	<div id="imageresizer__actions">
 		<button type="button" id="resize">resize</button>
 		<button type="button" id="clear">clear</button>
 		<button type="button" id="edit">edit</button>
 		<button id="download">download</button>
-	</p>
+	</div>
 	<img class="logo" src="media/images/lama.png">
 </div>
 <div id="imagecollection">
-	<div id="list"></div>
+	<div id="imagecollection__list"></div>
 </div>
 <form class="outputfiles">
-	<div id="storage"></div>
+	<div id="outputfiles__storage"></div>
 </form>
 <div id="to-top"><span>top</span></div>

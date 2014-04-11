@@ -15,13 +15,15 @@ document.getElementById("file-input").onchange = function(e){
 	collectionClear();
     uploadCollection(e);
 };
-document.getElementById("resize").onclick = function(e){
-	$('#imagecollection').css({"left":"5%"});
+document.getElementById("resize").onclick = function(){
+	animateCss();
 	originalCollection(storage);
 	window.scrollTo(0,0);
 };
 document.getElementById("edit").onclick = function(){
-	console.log("edit has not yet been made");
+	animateCss();
+	var cropYeah = true;
+	originalCollection(storage, cropYeah);
 };
 document.getElementById('download').onclick = function(){
 	toZip(dataStorage);
