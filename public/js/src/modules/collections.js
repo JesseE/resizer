@@ -54,8 +54,8 @@ function handleFileSelect(e) {
     }
 
  }
- function templating(newImg, storage) {
+ function templating(newImg, storage, i) {
 	document.getElementById('outputfiles__storage').appendChild(newImg).setAttribute('id', 'canvas'+i);
 	detectFileType(newImg, i, storage[i].type);
-	console.log("cropped");
+	// console.log("cropped");
 }

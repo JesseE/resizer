@@ -12,7 +12,7 @@ function detectFileType(newImg, i){
 	// cTx.webkitImageSmoothingEnabled = true;
 	// cTx.mozImageSmoothingEnabled = true;
 	// cTx.imageSmoothingEnabled = true;
-	console.log(cTx);
+	// console.log(cTx);
 	console.log(storage[i].type);
 	switch(storage[i].type) {
 		case "image/jpeg":

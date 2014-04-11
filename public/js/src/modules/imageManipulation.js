@@ -9,7 +9,7 @@ function manipulateImages(storage, i) {
 	loadImage(
 		storage[i],
 		function(newImg){
-			templating(newImg, storage);
+			templating(newImg, storage, i);
 		},
 		{
 			minWidth: inputWidth.value,
@@ -23,7 +23,7 @@ function cropYou(storage, i){
 	loadImage(
 		storage[i],
 		function(newImg){
-			templating(newImg, storage);
+			templating(newImg, storage, i);
 		},
 		{
 			maxWidth: inputWidth.value,
