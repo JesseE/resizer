@@ -44,7 +44,7 @@
 
 * { box-sizing: border-box; }
 
-html { font-size: 62.5%; line-height: 1.4; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+html { font-size: 62.5%; line-height: 1.4; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; background:#FFF;
 	@include bp-max($small) { font-size: 50%; }}
 body, button, input, select, textarea { font-family: $bodyFont; @include font-size($defaultFontSize); color: #000; }
 body { background: #fff; margin: 0; }

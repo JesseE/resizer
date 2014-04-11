@@ -1,13 +1,15 @@
-//clear collection
+//methodes to clear collection
 function collectionClear(){
 	$("canvas").remove();
 	storage.length = 0;
 	dataStorage.length = 0;
-	$("span img").remove();
+	$("div img").remove();
+	inputWidth.value = "";
+	inputHeight.value = "";
 }
 //collecting all the uploaded images
 function uploadCollection(e){
-	 for(var i = 0, len = e.target.files.length; i < len; i++){
+	for(var i = 0, len = e.target.files.length; i < len; i++){
         var files = e.target.files[i];
         storage.push(files);
     }
@@ -32,8 +34,8 @@ function handleFileSelect(e) {
       reader.onload = (function(theFile) {
         return function(e) {
           // Render thumbnail.
-          var span = document.createElement('span');
-          span.innerHTML = ['<img class="thumb" src="', e.target.result,
+          var span = document.createElement('div');
+          span.innerHTML = ['<img src="', e.target.result,
                             '" title="', escape(theFile.name), '"/>'].join('');
           document.getElementById('list').insertBefore(span, null);
         };
