@@ -73,5 +73,28 @@ $(function() {
 		var fm = new Garp.FlashMessage(cookie_msg);
 		fm.show();
 	}
+	var canvas=document.getElementById("canvas");
+
+        var ctx=canvas.getContext("2d");
+
+        img=new Image();
+        img.onload=function(){
+
+            /// step 1
+            var oc = document.createElement('canvas'),
+                octx = oc.getContext('2d');
+            oc.width = img.width * 0.5;
+            oc.height = img.height * 0.5;
+            octx.drawImage(img, 0,0, oc.width,oc.height);
+
+            /// step 2
+            octx.drawImage(oc,0,0,oc.width * 0.5,oc.height * 0.5);
+
+            canvas.width=400;
+            canvas.height=150;
+            ctx.drawImage(oc,0,0,oc.width * 0.5, oc.height * 0.5,
+                             0,0,canvas.width,canvas.height);
+        }
+        img.src="http://openwalls.com/image/17342/colored_lines_on_blue_background_1920x1200.jpg";
 
 });
