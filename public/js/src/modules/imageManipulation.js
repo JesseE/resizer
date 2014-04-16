@@ -48,7 +48,7 @@ function antiAlias(newImg,storage, i){
 
 	octx.drawImage(oc, 0, 0, oc.width * 0.5, oc.height * 0.5);
 
-	// canvas.width = inputWidth.value;
+	//  canvas.width = inputWidth.value;
 	// canvas.height = inputHeight.value;
 
 	ctx.drawImage(oc, 0, 0, oc.width * 0.5, oc.height * 0.5,
