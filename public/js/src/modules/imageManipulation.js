@@ -10,7 +10,7 @@ function manipulateImages(storage, i) {
 		storage[i],
 		function(newImg){
 			templatingCanvas(newImg, storage, i);
-			antiAlias(newImg, storage, i);
+			// antiAlias(newImg, storage, i);
 		},
 		{
 			minWidth: inputWidth.value,
@@ -41,17 +41,17 @@ function antiAlias(newImg,storage, i){
 	var oc  = document.createElement('canvas'),
     octx = oc.getContext('2d');
 
-	oc.width  = newImg.width * 0.5;
-	oc.height = newImg.height * 0.5;
+	oc.width  = newImg.width * 1.5;
+	oc.height = newImg.height * 1.5;
 
 	octx.drawImage(newImg, 0, 0, oc.width, oc.height);
 
-	octx.drawImage(oc, 0, 0, oc.width * 0.5, oc.height * 0.5);
+	octx.drawImage(oc, 0, 0, oc.width * 1.5, oc.height * 1.5);
 
 	//  canvas.width = inputWidth.value;
 	// canvas.height = inputHeight.value;
 
-	ctx.drawImage(oc, 0, 0, oc.width * 0.5, oc.height * 0.5,
+	ctx.drawImage(oc, 0, 0, oc.width * 1.5, oc.height * 1.5,
                   0, 0, canvas.width,   canvas.height);
 }
 // problem with resizing image is that the image gets pixalated when using canvas
