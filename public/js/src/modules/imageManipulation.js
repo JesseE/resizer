@@ -23,22 +23,22 @@
 		savable(aSaveMultiData);
 
 	}
-	//crop function
-	function cropAction() {
+	// //crop function
+	// function cropAction() {
 
-		var bSaveMultiData = [];
+	// 	var bSaveMultiData = [];
 
-		for (var i = 0, f; f = files[i]; i++) {
+	// 	for (var i = 0, f; f = files[i]; i++) {
 
-			//get all the images with image ids and place new image in canvas
-			var b = new obscura('#images'+i, '#canvas'+ i);
-			b.crop(0,0,widthButton.value, heightButton.value);
+	// 		//get all the images with image ids and place new image in canvas
+	// 		var b = new obscura('#images'+i, '#canvas'+ i);
+	// 		b.crop(0,0,widthButton.value, heightButton.value);
 
-			var Canvas = document.getElementById('canvas'+i);
-			var bSaveData = Canvas.toDataURL("image/png");
+	// 		var Canvas = document.getElementById('canvas'+i);
+	// 		var bSaveData = Canvas.toDataURL("image/png");
 
-			bSaveMultiData.push(bSaveData);
-		}
+	// 		bSaveMultiData.push(bSaveData);
+	// 	}
 
-		savable(bSaveMultiData);
-	}
+	// 	savable(bSaveMultiData);
+	// }
