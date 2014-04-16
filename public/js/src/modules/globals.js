@@ -7,7 +7,6 @@ var inputWidth = document.getElementById('widthVal');
 var inputHeight = document.getElementById('heightVal');
 var storage = [];
 var dataStorage = [];
-
 // handlers to activate desired functions
 document.getElementById("file-input").onchange = function(e){
 	$('.imagecollection').css({"left":"15%"});

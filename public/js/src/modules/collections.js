@@ -6,15 +6,15 @@ function collectionClear(){
 	$("canvas").remove();
 	storage.length = 0;
 	dataStorage.length = 0;
-	$("div img").remove();
+	$("#images img").remove();
+	$("#loader").css("width","0%");
 	inputWidth.value = "";
 	inputHeight.value = "";
 }
 //collecting all the uploaded images
 function uploadCollection(e){
 	for(var i = 0, len = e.target.files.length; i < len; i++){
-        var files = e.target.files[i];
-        storage.push(files);
+        storage.push(e.target.files[i]);
     }
 }
 //when resize function needs to be called collect al the images first
@@ -30,30 +30,24 @@ function originalCollection(storage, cropFunction) {
 	}
 }
 function handleFileSelect(e) {
-    var files = e.target.files; // FileList object
-    // Loop through the FileList and render image files as thumbnails.
+    var files = e.target.files;
     for (var i = 0, len = e.target.files.length; i < len; i++) {
-      // Only process image files.
       var f = files[i];
-      if (!f.type.match('image.*')) {
-        continue;
-      }
       var reader = new FileReader();
-      // Closure to capture the file information.
       reader.onload = (function(theFile) {
         return function(e) {
-          // Render thumbnail.
-          var span = document.createElement('div');
-          span.innerHTML = ['<img src="', e.target.result,
+          var div = document.createElement('div');
+          div.setAttribute("id", "images");
+          div.innerHTML = ['<img src="', e.target.result,
                             '" title="', escape(theFile.name), '"/>'].join('');
-          document.getElementById('imagecollection__list').insertBefore(span, null);
+          document.getElementById('imagecollection__list').insertBefore(div, null);
         };
       })(f);
       // Read in the image file as a data URL.
       reader.readAsDataURL(f);
     }
  }
- function templating(newImg, storage, i) {
+ function templatingCanvas(newImg, storage, i) {
 	document.getElementById('outputfiles__storage').appendChild(newImg).setAttribute('id', 'canvas'+i);
 	detectFileType(newImg, i, storage[i].type);
 	// console.log("cropped");

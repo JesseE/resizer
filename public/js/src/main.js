@@ -73,12 +73,5 @@ $(function() {
 		var fm = new Garp.FlashMessage(cookie_msg);
 		fm.show();
 	}
-	//problem: when selected items are resized you will need to refresh the page in order to use de resize tool again
-	//suggestions:
-	//	-thinks of a way to reset to null
-	// 	-count images after added with file input
-
-	//clipboard functie gebruiken voor testen
-	//minder handeleing voor testen
 
 });

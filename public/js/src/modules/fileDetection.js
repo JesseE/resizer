@@ -4,16 +4,7 @@
 */
 //return the canvas images collection to detect wich file type is needed
 function detectFileType(newImg, i){
-    // canvas anti ailiasing not yet supported
-
-    // var Canvas = document.getElementById('canvas'+ i)
-	// var cTx = newImg.getContext("2d");
-	// var CTX = document.getElementsByTagName('canvas');
-	// cTx.webkitImageSmoothingEnabled = true;
-	// cTx.mozImageSmoothingEnabled = true;
-	// cTx.imageSmoothingEnabled = true;
-	// console.log(cTx);
-	console.log(storage[i].type);
+	loader(i);
 	switch(storage[i].type) {
 		case "image/jpeg":
 			var DataURLJPG = newImg.toDataURL("image/jpeg");
@@ -23,7 +14,11 @@ function detectFileType(newImg, i){
 			var DataURLPNG = newImg.toDataURL();
 			dataStorage.push(DataURLPNG);
 		break;
-        //to data url doesnt support gif files
-        //maybe search for an alternative
 	}
+}
+function loader(i){
+	storage.reverse();
+	var index = i++;
+	console.log((index/storage.length)*100);
+	$('#loader').css("width" ,""+(index/storage.length)*100 +"%");
 }
