@@ -14,7 +14,7 @@
     "tests"
   ],
   "dependencies": {
-    "modernizr": "~2.7.1"
+    "blueimp-load-image": "~1.11.1"
   },
   "exportsOverride": {
     "modernizr": {
@@ -23,7 +23,9 @@
   },
   "devDependencies": {
     "fastclick": "~0.6.11",
-    "jszip": "~2.0.0",
-    "blueimp-load-image": "1.11.1"
-  }
+    "jszip": "~2.0.0"
+  },
+  "moduleType": [
+    "globals"
+  ]
 }

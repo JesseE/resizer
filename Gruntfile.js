@@ -361,7 +361,7 @@ module.exports = function(grunt) {
 		'copy',
 		'bower_concat',
 		'modernizr',
-		'jshint',
+		//'jshint',
 		'documentWritify:dev',
 		'sass:dev',
 		'autoprefixer:dev'
@@ -376,7 +376,7 @@ module.exports = function(grunt) {
 		'copy',
 		'bower_concat',
 		'modernizr',
-		'jshint',
+		//'jshint',
 		'uglify:prod',
 		'sass:prod',
 		'autoprefixer:prod',
