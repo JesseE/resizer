@@ -38,8 +38,18 @@ function antiAlias(newImg,storage, i){
 	var canvas = document.getElementById("canvas" + i);
    	var ctx	= canvas.getContext("2d");
 
+<<<<<<< HEAD
 	var oc  = document.createElement('canvas'),
     octx = oc.getContext('2d');
+=======
+		savable(aSaveMultiData);
+
+	}
+	 //crop function
+	function cropAction() {
+
+		var bSaveMultiData = [];
+>>>>>>> feature/prototype
 
 	oc.width  = newImg.width * 1.5;
 	oc.height = newImg.height * 1.5;
