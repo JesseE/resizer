@@ -18,7 +18,7 @@ function detectFileType(newImg, i){
 }
 function loader(i){
 	storage.reverse();
-	var index = i++;
+	var index = ++i;
 	console.log((index/storage.length)*100);
 	$('#loader').css("width" ,""+(index/storage.length)*100 +"%");
 }

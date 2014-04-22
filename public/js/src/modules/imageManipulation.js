@@ -3,16 +3,19 @@
  *	Author: Jesse
  *
 */
-//this is the new shit
+
 //resize the images with the javascript external lib loadImage();
 function manipulateImages(storage, i) {
 	// console.log(storage[i]);
 	loadImage(
 		storage[i],
 		function(newImg){
+
 			templatingCanvas(newImg, storage, i);
-			 // antiAlias(newImg, storage, i);
+			antiAlias(newImg, storage, i);
 			imageDimensions(newImg, storage, i);
+
+
 		},
 		{
 			minWidth: inputWidth.value,
@@ -52,52 +55,57 @@ function imageDimensions(newImg, storage, i) {
 	//insert in the div
 
 }
-// function antiAlias(newImg,storage, i){
-// 	var canvas = document.getElementById("canvas" + i);
-//    	var ctx	= canvas.getContext("2d");
-//    	console.log(canvas.toDataURL());
-//    	var NewImg = canvas.toDataURL();
-//    	NewImg = new Image();
-//     console.log("blurry bitch");
+function antiAlias(newImg, storage, i){
+	 var canvas = document.getElementById("canvas"+i);
+	 var imgData = canvas.toDataURL();
+	 newImg.src = imgData;
+	//  newImg.src = imgData;
+	// console.log(imgData);
+ // 	var canvas=document.getElementById("canvas"+i)
+ //    var ctx=canvas.getContext("2d");
+ //        /// step 1
+ //        var oc = document.createElement('canvas'),
+ //            octx = oc.getContext('2d');
+ //        oc.width = newImg.width * 0.5;
+ //        oc.height = newImg.height * 0.5;
+ //        octx.drawImage(newImg, 0,0, oc.width,oc.height);
 
-// 	var oc = document.createElement('canvas'),
-//     octx = oc.getContext('2d');
+ //        /// step 2
+ //        octx.drawImage(oc,0,0,oc.width * 0.5,oc.height * 0.5);
 
-//     oc.width = inputWidth.value * 0.5;
-//     oc.height = inputHeight.value * 0.5;
-//     octx.drawImage(newImg,0,0, oc.width,oc.height);
+ //        canvas.width=inputWidth.value;
+ //        canvas.height=inputHeight.value;
+ //        ctx.drawImage(oc,0,0,oc.width * 0.5, oc.height * 0.5,
+ //                         0,0,canvas.width,canvas.height);
 
-//     /// step 2
-//     octx.drawImage(oc,0,0,oc.width * 0.5,oc.height * 0.5);
+	polyFillPerfNow();
 
-//     canvas.width=inputWidth.value;
-//     canvas.height=inputHeight.value;
-//     console.log(canvas.width);
-//     console.log(canvas.height);
+	// Example
 
+	var cv = document.getElementById('canvas' +i);
+	var context = cv.getContext('2d');
 
+	context.ImageSmoothingEnabled = false;
+	context.webkitImageSmoothingEnabled = false;
+	context.mozImageSmoothingEnabled = false;
 
-//     ctx.drawImage(oc,0,0,oc.width * 0.5, oc.height * 0.5,
-//                      0,0,canvas.width,canvas.height);
-// 	  var oc  = document.createElement('canvas'),
-//    octx = oc.getContext('2d');
+	// context.fillStyle = '#080';
+	// context.fillRect(0, 0, 2000, 2000);
 
-	// oc.width  = newImg.width * 1.5;
-	// oc.height = newImg.height * 1.5;
+	var img = newImg;
 
-	// octx.drawImage(newImg, 0, 0, oc.width, oc.height);
+	var st =0, ed = 0;
+	st = performance.now();
 
-	// octx.drawImage(oc, 0, 0, oc.width * 1.5, oc.height * 1.5);
+	var scaledImage = downScaleImage(img, 0.8);
 
-	// // canvas.width = inputWidth.value;
-	// // canvas.height = inputHeight.value;
+	ed = performance.now();
 
-	// ctx.drawImage(oc, 0, 0, oc.width * 1.5, oc.height * 1.5,
- //                  0, 0, canvas.width,   canvas.height);
+	var pixelCount = img.width * img.height;
+	console.log('time taken for ' +( pixelCount) + ' pixels ' + (ed-st) + '.  '
+	                   + (1e3*(ed-st)/pixelCount) + ' ns per pixel '  );
 
-
-//}
-
+}
 
 // problem with resizing image is that the image gets pixalated when using canvas
 // this is happening because canvas uses image smoothing or Anti aliasing which makes the edges pixalated
