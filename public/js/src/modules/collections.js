@@ -10,6 +10,8 @@ function collectionClear(){
 	$("#loader").css("width","0%");
 	inputWidth.value = "";
 	inputHeight.value = "";
+	$("#items div").remove();
+	$(".dimensions").remove();
 }
 //collecting all the uploaded images
 function uploadCollection(e){
@@ -48,7 +50,11 @@ function handleFileSelect(e) {
     }
  }
  function templatingCanvas(newImg, storage, i) {
-	document.getElementById('outputfiles__storage').appendChild(newImg).setAttribute('id', 'canvas'+i);
+ 	var item = document.createElement('div');
+ 	item.setAttribute("id", "item"+i);
+ 	importCanvas(newImg, storage, i, item);
+}
+function importCanvas(newImg, storage, i, item){
+	document.getElementById('items').insertBefore(item, null).appendChild(newImg).setAttribute('id', 'canvas'+i);
 	detectFileType(newImg, i, storage[i].type);
-	// console.log("cropped");
 }
