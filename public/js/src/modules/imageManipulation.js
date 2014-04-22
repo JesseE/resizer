@@ -3,6 +3,7 @@
  *	Author: Jesse
  *
 */
+//this is the new shit
 //resize the images with the javascript external lib loadImage();
 function manipulateImages(storage, i) {
 	// console.log(storage[i]);
