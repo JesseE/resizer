@@ -6,9 +6,15 @@
 .imageresizer__actions{}
 .imagecollection__list{}
 .outputfiles__storage{}
+.dimensions p{color: #FFF;padding-left: 5px;}
+.dimensions{ width: 98%; top: 0; left:5px; position: absolute; display: block;background: #fab914;box-shadow: 1px 1px 5px #000;}
 .dnd:before{ vertical-align: middle; content: ''; display: inline-block; height: 200px; margin-right: -0.25em;}
 .dnd { width: 90%; height: 100%; margin: auto; border: 2px dashed #FFF; text-align: center; margin-top: 25px;}
-.outputfiles{ float: right; width: 75%; margin-top: 10px;}
+// .outputfiles{ float: right; width: 75%; margin-top: 10px;}
+#items{float: right; width: 75%; margin-top: 10px;}
+.item{float: left; position:relative;}
+span.highlight{color: #000;}
+#dimensions{float: right; width: 75%; margin-top: 10px;}
 #loader{ z-index: 1; position: fixed; top: 0; left: 15%; width: 0%;height: 5px; background: #fab914; box-shadow: 0 1px 5px #000;}
 #imagecollection{ position: absolute; left: 15%; width: 15%; transition: all 0.4s cubic-bezier(0.17, 0.67, 0, 1);}
 #imagecollection img { width: 100%; margin: 5px; padding: 5px; background: #fab914; box-shadow: 1px 0 5px #000;}
