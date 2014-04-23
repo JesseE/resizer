@@ -10,12 +10,9 @@ function manipulateImages(storage, i) {
 	loadImage(
 		storage[i],
 		function(newImg){
-
 			templatingCanvas(newImg, storage, i);
 			antiAlias(newImg, storage, i);
 			imageDimensions(newImg, storage, i);
-
-
 		},
 		{
 			minWidth: inputWidth.value,
@@ -30,6 +27,8 @@ function cropImage(storage, i){
 		storage[i],
 		function(newImg){
 			templatingCanvas(newImg, storage, i);
+			antiAlias(newImg, storage, i);
+			imageDimensions(newImg, storage, i);
 		},
 		{
 			maxWidth: inputWidth.value,
@@ -93,11 +92,11 @@ function antiAlias(newImg, storage, i){
 	// context.fillRect(0, 0, 2000, 2000);
 
 	var img = newImg;
-
+	console.log(img);
 	var st =0, ed = 0;
 	st = performance.now();
 
-	var scaledImage = downScaleImage(img, 0.8);
+	var scaledImage = downScaleImage(img, 0.3);
 
 	ed = performance.now();
 
