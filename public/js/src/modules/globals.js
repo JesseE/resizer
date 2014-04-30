@@ -16,7 +16,6 @@ document.getElementById("file-input").onchange = function(e){
 };
 document.getElementById("resize").onclick = function(){
 	animateCss();
-
 	dataStorage.length =0;
 	originalCollection(storage);
 	window.scrollTo(0,0);

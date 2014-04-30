@@ -35,17 +35,18 @@ function originalCollection(storage, cropFunction) {
 //preview of selected files
 function handleFileSelect(e) {
     var files = e.target.files;
-    	for (var i = 0, len = e.target.files.length; i < len; i++) {
 
-      var f = files[i];
-      var reader = new FileReader;
+    for (var i = 0, len = e.target.files.length; i < len; i++) {
+    var f = files[i];
+    var reader = new FileReader;
 
     	reader.onload = (function(theFile) {
-
 	        var img = new Image;
+
 	        img.onload = function() {
 	            console.log(img.width);
 	        };
+
 	        return function(e) {
 	          var div = document.createElement('div');
 	          div.setAttribute("id", "images");
@@ -54,7 +55,7 @@ function handleFileSelect(e) {
 	          document.getElementById('imagecollection__list').appendChild(div, null);
 	      };
 	    })(f);
-        reader.readAsDataURL(f);
+    reader.readAsDataURL(f);
     }
  }
 // add specific classes
@@ -63,53 +64,24 @@ function templatingCanvas(newImg, storage, i) {
  	var item = document.createElement('div');
  	var father = document.getElementById("item"+ i);
  	var mother = document.getElementById("items");
- 	//if canvas already exits
-
 
  	item.setAttribute("id", "item"+i);
 
+ 	//add canvas to parent
  	importCanvas(newImg, storage, i, item, mother, father);
 
+ 	// update exiting canvas
  	if(canvas){
  		updateCanvas(newImg, canvas, father, mother);
  	}
 }
 function updateCanvas(newImg, canvas, father, mother) {
 	//replace old canvas with the new canvas
-	// if mother ('#items') has children
-	// then remove the childeren
-
 	if(mother.hasChildNodes()){
-
-
 		while(mother.firstChild){
-
 			father.replaceChild(newImg, canvas);
-			console.log(dataStorage);
 		}
-
-		//it doesnt replace the canvas when using multiple canvases at once
-			// mother.removeChild(mother.firstChild);
-
-			// father.removeChild(father.firstChild);
-
-		// while(mother.firstChild){
-		//  	mother.removeChild(mother.firstChild);
-
-	 //    }
-		// while(father.firstChild){
-		// 	father.removeChild(father.firstChild);
-		// }
-
-		//father.replaceChild(canvas, newImg);
-		// father.appendChild(newImg);
-		//father.replaceChild(newImg, canvas);
 	}
-	// if(mother.hasChildNodes()){
-	// 	father.removeChild(father.lastChild);
-	// 	mother.removeChild(mother.lastChild);
-	// }
-
 }
 //import canvas to the scene and start to detect which file types are used
 function importCanvas(newImg, storage, i, item, mother, father){

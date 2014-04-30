@@ -10,7 +10,7 @@ function manipulateImages(storage, i) {
 		storage[i],
 		function(newImg){
 			templatingCanvas(newImg, storage, i);
-			//antiAlias(newImg, storage, i);
+			antiAlias(newImg, storage, i);
 			imageDimensions(newImg, storage, i);
 		},
 		{
@@ -40,7 +40,6 @@ function cropImage(storage, i){
 }
 function imageDimensions(newImg, storage, i) {
 	//get the canvas el widht + height
-
 	var canvas = document.getElementById("canvas" + i);
 	var div = document.createElement('div');
 	var item = document.getElementById("item" + i);
