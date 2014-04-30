@@ -76,21 +76,31 @@ function templatingCanvas(newImg, storage, i) {
 }
 function updateCanvas(newImg, canvas, father, mother) {
 	//replace old canvas with the new canvas
-	console.log(canvas);
-	console.log(newImg);
 	// if mother ('#items') has children
 	// then remove the childeren
 
 	if(mother.hasChildNodes()){
-		console.log(mother);
+
+
+		while(mother.firstChild){
+
+			father.replaceChild(newImg, canvas);
+			console.log(dataStorage);
+		}
+
 		//it doesnt replace the canvas when using multiple canvases at once
 			// mother.removeChild(mother.firstChild);
 
 			// father.removeChild(father.firstChild);
 
-		while(mother.firstChild){
-			mother.removeChild(mother.firstChild);
-		}
+		// while(mother.firstChild){
+		//  	mother.removeChild(mother.firstChild);
+
+	 //    }
+		// while(father.firstChild){
+		// 	father.removeChild(father.firstChild);
+		// }
+
 		//father.replaceChild(canvas, newImg);
 		// father.appendChild(newImg);
 		//father.replaceChild(newImg, canvas);
