@@ -16,9 +16,10 @@ function detectFileType(newImg, i){
 		break;
 	}
 }
+//simple loader counts the amount of placed images from storage
 function loader(i){
 	storage.reverse();
 	var index = ++i;
-	console.log((index/storage.length)*100);
+	// console.log((index/storage.length)*100);
 	$('#loader').css("width" ,""+(index/storage.length)*100 +"%");
 }

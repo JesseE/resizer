@@ -1,13 +1,13 @@
 <?php
 /**
 * 	Before inclusion of this file:
-*	
+*
 * 	APPLICATION_ENV needs to be defined.
-* 	
-* 	optional:	
+*
+* 	optional:
 * 	bool READ_FROM_CACHE, default true
 * 	string MEMCACHE_HOST, default '127.0.0.1'
-* 	
+*
 */
 if (!defined('BASE_PATH')) {
 	define('BASE_PATH', realpath(dirname(__FILE__) . '/../..'));
@@ -57,7 +57,7 @@ require 'Garp/Loader.php';
 
 /**
  * Set up class loading.
- */ 
+ */
 $classLoader = Garp_Loader::getInstance(array(
 	'paths' => array(
 		array(
@@ -103,7 +103,7 @@ if (!extension_loaded('memcache')) {
 	$cacheStoreEnabled = false;
 } else {
 	$backendName = 'Memcached';
-	$cacheStoreEnabled = true;	
+	$cacheStoreEnabled = true;
 }
 
 $frontendOptions = array(
@@ -138,7 +138,7 @@ Zend_Db_Table_Abstract::setDefaultMetadataCache($cache);
 /**
  * Use this control for toggling cache on and off. Do not use
  * the 'caching' option in the Zend_Cache configuration, because
- * that also disables cleaning the cache. In the case of the 
+ * that also disables cleaning the cache. In the case of the
  * admin pages this is unwanted behavior.
  */
 Zend_Registry::set('readFromCache', READ_FROM_CACHE);
@@ -148,14 +148,14 @@ Zend_Registry::set('CacheFrontend', $cache);
 
 /**
  * Developer convenience methods.
- * NOTE: this area should be used for adding easy shortcut methods a developer 
+ * NOTE: this area should be used for adding easy shortcut methods a developer
  * may use. Real implementation code is probably best fitted in its own class,
  * such as controllers, models, behaviors, or helpers.
  */
 
 /**
  * Shortcut to logging messages.
- * @param String $file Basename of a log file. Extension may be omitted. 
+ * @param String $file Basename of a log file. Extension may be omitted.
  * 					   File will end up in /application/data/logs
  * @param String $message Your log message. Arrays will be print_r'd.
  * @param Int $priority A Zend_Log priority (e.g. INFO, NOTICE, WARN etc.)

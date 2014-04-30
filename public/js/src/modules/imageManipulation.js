@@ -2,8 +2,7 @@
  *	Adding resizablity and cropping functions
  *	Author: Jesse
  *
-*/
-
+ */
 //resize the images with the javascript external lib loadImage();
 function manipulateImages(storage, i) {
 	// console.log(storage[i]);
@@ -11,7 +10,7 @@ function manipulateImages(storage, i) {
 		storage[i],
 		function(newImg){
 			templatingCanvas(newImg, storage, i);
-			antiAlias(newImg, storage, i);
+			//antiAlias(newImg, storage, i);
 			imageDimensions(newImg, storage, i);
 		},
 		{
@@ -22,6 +21,7 @@ function manipulateImages(storage, i) {
 		}
 	);
 }
+//start the crop function
 function cropImage(storage, i){
 	loadImage(
 		storage[i],
@@ -39,72 +39,22 @@ function cropImage(storage, i){
 	);
 }
 function imageDimensions(newImg, storage, i) {
+	//get the canvas el widht + height
+
 	var canvas = document.getElementById("canvas" + i);
 	var div = document.createElement('div');
+	var item = document.getElementById("item" + i);
+
+
+	//add the dimensions div el
 	div.setAttribute("class", "dimensions");
 	div.innerHTML = ['<p>actual width: <span class="highlight">',canvas.width,'px</span>',' and actual height: <span class="highlight">',canvas.height,'px</span> </p>'].join('');
-	var item = document.getElementById("item" + i);
-	item.setAttribute("class", "item");
-	item.setAttribute("width", ""+canvas.width);
-	item.setAttribute("height", ""+canvas.height);
-	item.insertBefore(div, null);
-	//get the canvas el widht + height
-	//add the dimensions div el
+
 	//insert the widht and height values
+	item.setAttribute("class", "item");
+	item.style.width = canvas.width;
+	item.style.height = canvas.height;
+
 	//insert in the div
-
+	item.appendChild(div);
 }
-function antiAlias(newImg, storage, i){
-	 var canvas = document.getElementById("canvas"+i);
-	 var imgData = canvas.toDataURL();
-	 newImg.src = imgData;
-	//  newImg.src = imgData;
-	// console.log(imgData);
- // 	var canvas=document.getElementById("canvas"+i)
- //    var ctx=canvas.getContext("2d");
- //        /// step 1
- //        var oc = document.createElement('canvas'),
- //            octx = oc.getContext('2d');
- //        oc.width = newImg.width * 0.5;
- //        oc.height = newImg.height * 0.5;
- //        octx.drawImage(newImg, 0,0, oc.width,oc.height);
-
- //        /// step 2
- //        octx.drawImage(oc,0,0,oc.width * 0.5,oc.height * 0.5);
-
- //        canvas.width=inputWidth.value;
- //        canvas.height=inputHeight.value;
- //        ctx.drawImage(oc,0,0,oc.width * 0.5, oc.height * 0.5,
- //                         0,0,canvas.width,canvas.height);
-
-	polyFillPerfNow();
-
-	// Example
-
-	var cv = document.getElementById('canvas' +i);
-	var context = cv.getContext('2d');
-
-	context.ImageSmoothingEnabled = false;
-	context.webkitImageSmoothingEnabled = false;
-	context.mozImageSmoothingEnabled = false;
-
-	// context.fillStyle = '#080';
-	// context.fillRect(0, 0, 2000, 2000);
-
-	var img = newImg;
-	console.log(img);
-	var st =0, ed = 0;
-	st = performance.now();
-
-	var scaledImage = downScaleImage(img, 0.3);
-
-	ed = performance.now();
-
-	var pixelCount = img.width * img.height;
-	console.log('time taken for ' +( pixelCount) + ' pixels ' + (ed-st) + '.  '
-	                   + (1e3*(ed-st)/pixelCount) + ' ns per pixel '  );
-
-}
-
-// problem with resizing image is that the image gets pixalated when using canvas
-// this is happening because canvas uses image smoothing or Anti aliasing which makes the edges pixalated
