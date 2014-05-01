@@ -8,12 +8,9 @@ function toZip() {
 	for ( var i = 0, len = dataStorage.length; i < len; i++ ){
 		var strings = dataStorage[i].substr(dataStorage[i].indexOf(',')+1);
 		var name = storage[i].name;
-
 		zip.file(name, strings, {base64: true});
 	}
-
 	var url = window.URL.createObjectURL(zip.generate({type: "blob"}));
 	location.href = url;
-
 	return;
 }
