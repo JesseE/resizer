@@ -62,29 +62,35 @@ function handleFileSelect(e) {
 function templatingCanvas(newImg, storage, i) {
  	var canvas = document.getElementById("canvas" + i);
  	var item = document.createElement('div');
- 	var father = document.getElementById("item"+ i);
+ 	var child = document.getElementById("item"+ i);
  	var mother = document.getElementById("items");
 
  	item.setAttribute("id", "item"+i);
 
  	//add canvas to parent
- 	importCanvas(newImg, storage, i, item, mother, father);
+ 	importCanvas(newImg, storage, i, item, mother, child);
 
  	// update exiting canvas
  	if(canvas){
- 		updateCanvas(newImg, canvas, father, mother);
+ 		updateCanvas(newImg, canvas, child, mother);
  	}
 }
-function updateCanvas(newImg, canvas, father, mother) {
+function updateCanvas(newImg, canvas, child, mother) {
 	//replace old canvas with the new canvas
 	if(mother.hasChildNodes()){
 		while(mother.firstChild){
-			father.replaceChild(newImg, canvas);
+			// console.log(mother.childNodes);
+			// console.log(mother.lastChild);}
+			if($(mother.firstChild).hasClass("item")){
+				console.log($(mother.firstChild));
+
+			}
+			child.replaceChild(newImg, canvas);
 		}
 	}
 }
 //import canvas to the scene and start to detect which file types are used
-function importCanvas(newImg, storage, i, item, mother, father){
+function importCanvas(newImg, storage, i, item, mother, child){
 	mother.insertBefore(item, null).appendChild(newImg).setAttribute('id', 'canvas'+i);
 	detectFileType(newImg, i, storage[i].type);
 }
