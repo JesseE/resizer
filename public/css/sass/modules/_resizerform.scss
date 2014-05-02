@@ -12,7 +12,8 @@
 .dnd { width: 90%; height: 100%; margin: auto; border: 2px dashed #FFF; text-align: center; margin-top: 25px;}
 // .outputfiles{ float: right; width: 75%; margin-top: 10px;}
 #items{float: right; width: 75%; margin-top: 10px;}
-.item{float: left; position:relative;margin: 40px 5px 5px 5px;}
+.item{float: left; position:relative;margin: 40px 5px 5px 5px;-webkit-transition: all .2s ease-in-out;}
+.item:hover{-webkit-transform: scale(1.1);}
 span.highlight{color: #000;}
 #dimensions{float: right; width: 75%; margin-top: 10px;}
 #loader{ z-index: 1; position: fixed; bottom: 0; left: 15%; width: 0%;height: 5px; background: #fab914; box-shadow: 0 1px 5px #000;}

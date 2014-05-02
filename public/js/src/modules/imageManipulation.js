@@ -4,13 +4,11 @@
  *
  */
 //resize the images with the javascript external lib loadImage();
-function manipulateImages(storage, i, alias) {
-	// console.log(storage[i]);
+function manipulateImages(storage, i, antiAlias) {
 	loadImage(
 		storage[i],
 		function(newImg){
-			templatingCanvas(newImg, storage, i, alias);
-
+			templatingCanvas(newImg, storage, i, antiAlias);
 		},
 		{
 			minWidth: inputWidth.value,
@@ -21,13 +19,11 @@ function manipulateImages(storage, i, alias) {
 	);
 }
 //start the crop function
-function cropImage(storage, i){
+function cropImage(storage, i, antiAlias){
 	loadImage(
 		storage[i],
 		function(newImg){
-			templatingCanvas(newImg, storage, i);
-			antiAlias(newImg, storage, i);
-			imageDimensions(newImg, storage, i);
+			templatingCanvas(newImg, storage, i, antiAlias);
 		},
 		{
 			maxWidth: inputWidth.value,

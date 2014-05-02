@@ -1,5 +1,5 @@
 /*
- *	Adding global variables
+ *	global variables
  *	Author: Jesse
 */
 // creating globals to be called in the desired functions
@@ -8,40 +8,45 @@ var inputHeight = document.getElementById('heightVal');
 var oriDimensions = [];
 var storage = [];
 var dataStorage = [];
-var alias = false;
-// handlers to activate desired functions
+var antiAlias = false;
+var cropFunction = false;
+
 document.getElementById("file-input").onchange = function(e){
-	$('.imagecollection').css({"left":"15%"});
+	clearCollection();
+	animateCssLeft();
 	handleFileSelect(e);
-	collectionClear();
     uploadCollection(e);
 };
 document.getElementById("resize").onclick = function(){
+	resizeFunction = true;
 	animateCss();
-	dataStorage.length =0;
-	originalCollection(storage);
-	window.scrollTo(0,0);
+	dataStorage.length = 0;
+	originalCollection(storage, antiAlias);
+	backToTop();
 };
-document.getElementById("edit").onclick = function(){
+document.getElementById("crop").onclick = function(){
+	cropFunction = true;
+	antiAlias = true;
 	animateCss();
-	var cropFunction = true;
-	originalCollection(storage, cropFunction);
+	originalCollection(storage, cropFunction, antiAlias);
 };
 document.getElementById('download').onclick = function(){
 	toZip(dataStorage);
 };
 document.getElementById("clear").onclick = function() {
-	collectionClear();
+	clearCollection();
 	document.getElementById("file-input").value="";
 };
 document.getElementById("antialias").onclick = function(){
-	alias = true;
-	if(alias = true){
-		originalCollection(storage, alias);
-		console.log(alias);
-		console.log('alias is on');
-	}
-}
-document.getElementById('to-top').onclick = function() {
-	window.scrollTo(0,0);
+	// still a bug here
+	antiAlias = true;
+	animateCss();
+	originalCollection(storage, antiAlias);
+	backToTop();
 };
+document.getElementById('to-top').onclick = function() {
+	backToTop();
+};
+// document.getElementById('items').onclick = function() {
+// 	console.log(this);
+// };
