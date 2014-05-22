@@ -1,0 +1,1490 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Save",
+				"SaveMultiData"
+			],
+			[
+				"save",
+				"Save"
+			],
+			[
+				"set",
+				"setUpImageData"
+			],
+			[
+				"o",
+				"oImgPNG"
+			],
+			[
+				"sav",
+				"SavedPNG"
+			],
+			[
+				"File",
+				"FilesSaved"
+			],
+			[
+				"file",
+				"FilesSaved"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"blob",
+				"blobLink"
+			],
+			[
+				"svae",
+				"savedFiles"
+			],
+			[
+				"create",
+				"createElement"
+			],
+			[
+				"read",
+				"readAsDataURL"
+			],
+			[
+				"background",
+				"background-image"
+			],
+			[
+				"i",
+				"i"
+			],
+			[
+				"res",
+				"resizeButton"
+			],
+			[
+				"text",
+				"textarea"
+			],
+			[
+				"mess",
+				"messages"
+			],
+			[
+				"mes",
+				"message"
+			],
+			[
+				"tw",
+				"twitter_organizer_username"
+			],
+			[
+				"twi",
+				"twitter_search_query"
+			],
+			[
+				"twitter",
+				"twitter_organizer_username"
+			],
+			[
+				"cou",
+				"countries"
+			],
+			[
+				"c",
+				"countries"
+			],
+			[
+				"countr",
+				"country"
+			],
+			[
+				"sect",
+				"sectionSlug"
+			],
+			[
+				"va",
+				"value"
+			],
+			[
+				"ne",
+				"new_values"
+			],
+			[
+				"upda",
+				"updated"
+			],
+			[
+				"inser",
+				"insert"
+			],
+			[
+				"gro",
+				"group"
+			],
+			[
+				"inval",
+				"invalidEnddateCount"
+			],
+			[
+				"eve",
+				"events"
+			],
+			[
+				"Inser",
+				"Inserting"
+			],
+			[
+				"sta",
+				"start"
+			],
+			[
+				"import",
+				"import_id"
+			],
+			[
+				"locat",
+				"locations"
+			],
+			[
+				"loca",
+				"locations"
+			],
+			[
+				"inse",
+				"inserted"
+			],
+			[
+				"con",
+				"continue"
+			],
+			[
+				"get_incl",
+				"get_included_files"
+			],
+			[
+				"call_",
+				"call_user_func_array"
+			],
+			[
+				"pro",
+				"projects"
+			],
+			[
+				"th",
+				"this"
+			],
+			[
+				"use",
+				"userList"
+			],
+			[
+				"sear",
+				"search"
+			],
+			[
+				"fetc",
+				"fetchTweets"
+			],
+			[
+				"sea",
+				"search"
+			],
+			[
+				"fetchus",
+				"fetchUserList"
+			],
+			[
+				"q",
+				"query"
+			],
+			[
+				"seartees",
+				"searchTweets"
+			],
+			[
+				"stat",
+				"status"
+			],
+			[
+				"Garp",
+				"Garp_Cli"
+			],
+			[
+				"statu",
+				"statuses"
+			],
+			[
+				"consu",
+				"consumer_secret"
+			],
+			[
+				"ye",
+				"yesplan_api_key"
+			],
+			[
+				"req",
+				"require"
+			],
+			[
+				"error",
+				"error_reporting"
+			],
+			[
+				"v",
+				"var_dump"
+			],
+			[
+				"me",
+				"method"
+			],
+			[
+				"co",
+				"controller"
+			],
+			[
+				"erro",
+				"error_reporting"
+			],
+			[
+				"ecn",
+				"encrypted_data"
+			],
+			[
+				"ent",
+				"encrypted_data"
+			],
+			[
+				"base",
+				"base64_encode"
+			],
+			[
+				"encr",
+				"encrypted_data"
+			],
+			[
+				"enc",
+				"encrypted_data"
+			],
+			[
+				"dec",
+				"decrypted"
+			],
+			[
+				"s",
+				"slug"
+			],
+			[
+				"sou",
+				"soundcloud"
+			],
+			[
+				"partia",
+				"partials"
+			],
+			[
+				"part",
+				"partial"
+			],
+			[
+				"parti",
+				"partial"
+			],
+			[
+				"Mod",
+				"Model_Video"
+			],
+			[
+				"cas",
+				"Cases"
+			],
+			[
+				"em",
+				"empty"
+			],
+			[
+				"garp",
+				"Garp_Cli"
+			],
+			[
+				"rwa",
+				"rawImage"
+			],
+			[
+				"_eve",
+				"_eventGroupModel"
+			],
+			[
+				"_pro",
+				"_processEventGroup"
+			],
+			[
+				"insert",
+				"insertOrUpdate"
+			],
+			[
+				"raw",
+				"rawImage"
+			],
+			[
+				"ima",
+				"imageFile"
+			],
+			[
+				"all",
+				"allowedExtension"
+			],
+			[
+				"allo",
+				"allowedTags"
+			],
+			[
+				"old",
+				"oldDiscipline"
+			],
+			[
+				"impo",
+				"import_id"
+			],
+			[
+				"locatio",
+				"_locationMap"
+			],
+			[
+				"htmlen",
+				"html_entity_decode"
+			],
+			[
+				"dis",
+				"discipline"
+			],
+			[
+				"_ge",
+				"_getMultilingual"
+			],
+			[
+				"_g",
+				"_getNewDiscipline"
+			],
+			[
+				"event",
+				"events"
+			],
+			[
+				"gar",
+				"Garp_Cli"
+			],
+			[
+				"grou",
+				"group_data"
+			],
+			[
+				"end",
+				"enddate"
+			],
+			[
+				"time",
+				"time_format"
+			],
+			[
+				"into",
+				"intro"
+			],
+			[
+				"prov",
+				"provider_details"
+			],
+			[
+				"conta",
+				"contact_name"
+			],
+			[
+				"array_key",
+				"array_key_exists"
+			],
+			[
+				"user",
+				"user_id"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "antiAlias.js",
+			"settings":
+			{
+				"buffer_size": 1964,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "collections.js",
+			"settings":
+			{
+				"buffer_size": 2408,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "fileDetection.js",
+			"settings":
+			{
+				"buffer_size": 618,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "globals.js",
+			"settings":
+			{
+				"buffer_size": 1365,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "imageManipulation.js",
+			"settings":
+			{
+				"buffer_size": 685,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "saveFunctionality.js",
+			"settings":
+			{
+				"buffer_size": 447,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templatingCanvas.js",
+			"settings":
+			{
+				"buffer_size": 1842,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 400.0,
+		"selected_items":
+		[
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"remove p",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 475.0
+	},
+	"console":
+	{
+		"height": 139.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib2,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); os.makedirs( ipp ) if not os.path.exists(ipp) else None; urllib2.install_opener( urllib2.build_opener( urllib2.ProxyHandler()) ); by = urllib2.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); open( os.path.join( ipp, pf), 'wb' ).write(by) if dh == h else None; print('Error validating download (got %s instead of %s), please try manual install' % (dh, h) if dh != h else 'Please restart Sublime Text to finish installation') ",
+			" import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) ",
+			" import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			" import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/sander/Sites/sma/application/modules/default/controllers/VisitController.php"
+	],
+	"find":
+	{
+		"height": 22.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/home/sander/Sites/multiplejournalism/application/modules",
+			"/home/sander/Sites/multiplejournalism/application/",
+			"/home/sander/Sites/melkweg/",
+			"/home/sander/Sites/melkweg/application/",
+			"/home/sander/Sites/melkweg/",
+			"/home/sander/Sites/jillmagid/",
+			"/home/sander/Sites/melkweg/",
+			"/home/sander/Sites/melkweg/application/",
+			"/home/sander/Sites/melkweg/application/modules/default/controllers/",
+			"/home/sander/Sites/melkweg/application",
+			"/home/sander/Sites/melkweg/",
+			"/home/sander/Sites/multiplejournalism/",
+			"/home/sander/Sites/dish2013/application/modules/",
+			"/home/sander/Sites/dish2013/",
+			"/home/sander/Sites/sma/",
+			"/home/sander/Sites/melkweg/",
+			"/home/sander/Sites/melkweg/application/modules/default/controllers",
+			"/home/sander/Sites/melkweg/application/modules",
+			"/home/sander/Sites/melkweg/application/",
+			"/home/sander/Sites/melkweg/application/modules/default/modules",
+			"/home/sander/Sites/melkweg/application/modules/default/controllers",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			";}",
+			"public",
+			"jquery.",
+			"input",
+			"div",
+			"\\",
+			"div",
+			"breakpoint",
+			"prod",
+			"js",
+			"src",
+			"dev",
+			"input",
+			"imageFiles",
+			"Files",
+			"imagefiles",
+			"files",
+			"resizebutton",
+			"base",
+			"savefile",
+			"\"><",
+			");\n",
+			"jpg",
+			"console",
+			"log",
+			"save",
+			");\n",
+			"lipsredlikeloub",
+			"Maudw0'",
+			"sdevos16'",
+			"Maudw0'",
+			"Maudw0",
+			"maud",
+			"strtolower(",
+			"slug",
+			"yemen",
+			"where",
+			"Where",
+			"where",
+			"\":",
+			"¨:",
+			"yemen",
+			"default",
+			"header",
+			"$values",
+			"}",
+			"{",
+			"function __(",
+			"default_em",
+			"function render(",
+			"render",
+			"$this->view(",
+			"val",
+			"snippet",
+			"importOrUpdate",
+			"importorupdate",
+			"not foun",
+			"garp_cli",
+			"_getsta",
+			"trim",
+			"tr",
+			"trim",
+			"function getnodeva",
+			"getnodeva",
+			"trim",
+			"getend",
+			"$enddate",
+			"enddate",
+			"lineout",
+			"echo",
+			"exit",
+			"_getnodeva",
+			"_processEventGroup",
+			"3500",
+			"#",
+			"3511",
+			"echo",
+			"garp_cli",
+			"published",
+			"dump",
+			"date",
+			"redirector",
+			"form",
+			"snippet",
+			"staging",
+			"$this->_uploadhelper",
+			"$this->_uploadhelpe",
+			"grid--item lap--one-whole mb",
+			"submit",
+			"CDN",
+			"build",
+			"mail",
+			"config",
+			"event_ty",
+			"event_tye",
+			"Venue_hire_form_event_type",
+			"Venue hire form event type",
+			"git checkout",
+			"require",
+			"include",
+			"require",
+			"include",
+			"require",
+			"tion",
+			"project",
+			"Exhibition",
+			"$this->_processEventGroup",
+			"unregisterobserver",
+			"htmlLink",
+			"book",
+			"order",
+			"$model = new Model_Book();",
+			"twitter_organizer_username",
+			"arra",
+			"public",
+			"this->",
+			"true",
+			"cli",
+			"facebook.php",
+			"xml",
+			"$_xml",
+			"get",
+			"base",
+			"facebook",
+			"face",
+			"facebook",
+			"config",
+			"public function"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"$this->values",
+			"; ?>",
+			"<?php echo ",
+			"$case",
+			"getImageExtens",
+			"\\r\\n",
+			"",
+			"'"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 6,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "antiAlias.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1964,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "collections.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2408,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "fileDetection.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 618,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "globals.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1365,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "imageManipulation.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 685,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "saveFunctionality.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 447,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "templatingCanvas.js",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 1842,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								829,
+								829
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 21.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 110.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "resizer.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"theme.php",
+				"application/modules/default/models/Theme.php"
+			],
+			[
+				"zenddbadapetrabstract",
+				"library/Zend/Validate/Barcode/AdapterAbstract.php"
+			],
+			[
+				"zenddb",
+				"library/Zend/Db.php"
+			],
+			[
+				"zenddbtableabstract",
+				"library/Zend/Db/Table/Abstract.php"
+			],
+			[
+				"garpmodeldb",
+				"library/Garp/Model/Db.php"
+			],
+			[
+				"impo",
+				"library/App/Cli/Command/Import.php"
+			],
+			[
+				"import",
+				"library/App/Cli/Command/Import.php"
+			],
+			[
+				"viewre",
+				"library/Zend/Controller/Action/Helper/ViewRenderer.php"
+			],
+			[
+				"garpcli",
+				"library/Garp/Cli.php"
+			],
+			[
+				"garp_cli",
+				"library/Garp/3rdParty/dompdf/www/test/anchor_link.html"
+			],
+			[
+				"garp/cli",
+				"garp/library/Garp/Cli.php"
+			],
+			[
+				"im",
+				"library/App/Cli/Command/Import.php"
+			],
+			[
+				"date.phtml",
+				"application/modules/default/views/scripts/partials/events/date.phtml"
+			],
+			[
+				"date.phtm",
+				"application/modules/default/views/scripts/partials/events/date.phtml"
+			],
+			[
+				"image",
+				"library/Garp/Cli/Command/Image.php"
+			],
+			[
+				"garpdatetim",
+				"library/Garp/DateTime.php"
+			],
+			[
+				"date.pht",
+				"application/modules/default/views/scripts/partials/events/date.phtml"
+			],
+			[
+				"date.html",
+				"application/modules/default/views/scripts/partials/events/date.phtml"
+			],
+			[
+				"infoven",
+				"application/modules/default/views/scripts/index/infovenuehire.phtml"
+			],
+			[
+				"authcontro",
+				"garp/application/modules/g/controllers/AuthController.php"
+			],
+			[
+				"snippet",
+				"application/configs/snippets.ini"
+			],
+			[
+				"garpcontrollerhelperupl",
+				"library/Garp/Controller/Helper/Upload.php"
+			],
+			[
+				"cdn.p",
+				"library/Golem/Cli/Command/Cdn.php"
+			],
+			[
+				"garpformelement",
+				"library/Garp/Form/Element/Number.php"
+			],
+			[
+				"validate",
+				"library/Zend/Validate.php"
+			],
+			[
+				"zendhelpform",
+				"library/Zend/View/Helper/Form.php"
+			],
+			[
+				"exhib",
+				"application/modules/default/controllers/ExhibitionsController.php"
+			],
+			[
+				"impor",
+				"library/App/Cli/Command/Import.php"
+			],
+			[
+				"s3",
+				"library/Garp/File/Storage/S3.php"
+			],
+			[
+				"garpfile",
+				"library/Garp/File.php"
+			],
+			[
+				"twiterabs",
+				"library/Garp/Cli/Command/Twitter/Abstract.php"
+			],
+			[
+				"twitterabs",
+				"library/Garp/Cli/Command/Twitter/Abstract.php"
+			],
+			[
+				"modeltheme",
+				"application/modules/default/models/Theme.php"
+			],
+			[
+				"theme.jso",
+				"application/modules/default/models/config/Theme.json"
+			],
+			[
+				"theme.json",
+				"application/modules/default/models/config/Theme.json"
+			],
+			[
+				"libraryappclicommandtw",
+				"library/App/Cli/Command/Twitter.php"
+			],
+			[
+				"toolkit",
+				"library/Golem/Toolkit.php"
+			],
+			[
+				"storage/s3",
+				"library/Garp/File/Storage/S3.php"
+			],
+			[
+				"article",
+				"library/Garp/Model/Behavior/Article.php"
+			],
+			[
+				"caseco",
+				"application/modules/default/controllers/CaseController.php"
+			],
+			[
+				"project.js",
+				"public/js/models/Project.js"
+			],
+			[
+				"basepro",
+				"application/modules/default/models/Base/Project.php"
+			],
+			[
+				"sectionwhitehea",
+				"application/modules/default/views/scripts/partials/chapters/section-white-header.phtml"
+			],
+			[
+				"chapter.json",
+				"application/modules/default/models/config/Chapter.json"
+			],
+			[
+				"text.jso",
+				"application/modules/default/models/config/Text.json"
+			],
+			[
+				"chapter.jso",
+				"application/modules/default/models/config/Chapter.json"
+			],
+			[
+				"slugga",
+				"library/Garp/Spawn/Behavior/Type/Sluggable.php"
+			],
+			[
+				"slugs",
+				"library/Garp/Cli/Command/Slugs.php"
+			],
+			[
+				"text.js",
+				"public/js/models/Text.js"
+			],
+			[
+				"case.json",
+				"application/modules/default/models/config/Case.json"
+			],
+			[
+				"articleheader",
+				"application/modules/default/views/scripts/partials/article-header.phtml"
+			],
+			[
+				"caseindex",
+				"application/modules/default/views/scripts/case/index.phtml"
+			],
+			[
+				"viewrender",
+				"library/Zend/Controller/Action/Helper/ViewRenderer.php"
+			],
+			[
+				"render",
+				"library/Zend/Controller/Action/Helper/ViewRenderer.php"
+			],
+			[
+				"viewhelperpartia",
+				"library/Zend/View/Helper/Partial.php"
+			],
+			[
+				"contentnode.jso",
+				"application/modules/default/models/config/ContentNode.json"
+			],
+			[
+				"contentnode.j",
+				"application/modules/default/models/config/ContentNode.json"
+			],
+			[
+				"chatpe",
+				"public/js/models/Chapter.js"
+			],
+			[
+				"gviewshelpervid",
+				"garp/application/modules/g/views/helpers/Video.php"
+			],
+			[
+				"text.json",
+				"application/modules/default/models/config/Text.json"
+			],
+			[
+				"vimeo.php",
+				"garp/application/modules/g/views/helpers/Vimeo.php"
+			],
+			[
+				"vimevi",
+				"garp/application/modules/g/models/VimeoVideo.php"
+			],
+			[
+				"vimeo",
+				"library/Garp/Service/Vimeo.php"
+			],
+			[
+				"appmodulesgmodelstext",
+				"garp/application/modules/g/models/Text.php"
+			],
+			[
+				"__mani",
+				"__MANIFEST.md"
+			],
+			[
+				"chapter",
+				"public/js/garp/models/Chapter.js"
+			],
+			[
+				"contentn",
+				"garp/application/modules/g/controllers/ContentController.php"
+			],
+			[
+				"arti",
+				"library/Garp/Model/Behavior/Article.php"
+			],
+			[
+				"modeltext",
+				"library/Garp/Model/Validator/Email/Exception.php"
+			],
+			[
+				"behavior",
+				"library/Garp/Model/Behavior/FileRelatable.php"
+			],
+			[
+				"vimeo.phtml",
+				"application/modules/default/views/scripts/partials/vimeo.phtml"
+			],
+			[
+				"init.",
+				"garp/application/init.php"
+			],
+			[
+				"dump",
+				"garp/library/Garp/Content/Db/ShellCommand/DumpToFile.php"
+			],
+			[
+				"helperupload",
+				"garp/library/Garp/Controller/Helper/Upload.php"
+			],
+			[
+				"high",
+				"application/modules/default/views/scripts/partials/dish-highlights.phtml"
+			],
+			[
+				"placesto",
+				"application/modules/default/views/scripts/partials/places-to-stay.phtml"
+			],
+			[
+				"info",
+				"application/modules/default/views/scripts/index/info.phtml"
+			],
+			[
+				"nav.",
+				"application/modules/default/views/scripts/partials/nav.phtml"
+			],
+			[
+				"ticket",
+				"application/modules/default/views/scripts/partials/buy-tickets-button.phtml"
+			],
+			[
+				"partialsspo",
+				"application/modules/default/views/scripts/partials/sponsors.phtml"
+			],
+			[
+				"scriptsgol",
+				"scripts/golem.php"
+			],
+			[
+				"modelprojec",
+				"application/modules/default/models/Project.php"
+			],
+			[
+				"melk",
+				"application/data/MelkwegEventsExport.xml"
+			],
+			[
+				"modeleven",
+				"application/modules/default/models/Event.php"
+			],
+			[
+				"modelevent",
+				"application/modules/default/models/Event.php"
+			],
+			[
+				"garpimagefil",
+				"library/Garp/Image/File.php"
+			],
+			[
+				"garpimagescaler",
+				"library/Garp/Image/Scaler.php"
+			],
+			[
+				"refa",
+				"library/App/Cli/Command/Refactor.php"
+			],
+			[
+				"garpimagefile",
+				"library/Garp/Image/File.php"
+			],
+			[
+				"refac",
+				"library/App/Cli/Command/Refactor.php"
+			],
+			[
+				"imp",
+				"library/App/Cli/Command/Import.php"
+			],
+			[
+				"jquery",
+				"public/js/libs/jquery.addPlaceholder.js"
+			],
+			[
+				"revie",
+				"application/modules/default/models/Review.php"
+			],
+			[
+				"melkw",
+				"application/data/MelkwegEventsExport.xml"
+			],
+			[
+				"trickable",
+				"library/App/Model/Behavior/Tricklable.php"
+			],
+			[
+				"event.json",
+				"application/modules/default/models/config/Event.json"
+			],
+			[
+				"eventgroup.jso",
+				"application/modules/default/models/config/EventGroup.json"
+			],
+			[
+				"modelsevent.ph",
+				"application/modules/default/models/Event.php"
+			],
+			[
+				"event.php",
+				"library/Zend/EventManager/Event.php"
+			],
+			[
+				"eventgroup.js",
+				"application/modules/default/models/config/EventGroup.json"
+			],
+			[
+				"base.scss",
+				"public/css/sass/base.scss"
+			],
+			[
+				"base",
+				"public/css/sass/base.scss"
+			],
+			[
+				"partialeventdate",
+				"application/modules/default/views/scripts/partials/events/date.phtml"
+			],
+			[
+				"eventjson",
+				"application/modules/default/models/config/Event.json"
+			],
+			[
+				"dataexp",
+				"application/data/MelkwegEventsExport.xml"
+			],
+			[
+				"even",
+				"public/js/models/Event.js"
+			],
+			[
+				"melkwe",
+				"application/data/MelkwegEventsExport.xml"
+			],
+			[
+				"video.js",
+				"garp/public/js/models/Video.js"
+			],
+			[
+				"dishthe",
+				"application/modules/default/views/scripts/partials/dish-themes.phtml"
+			],
+			[
+				"speaker",
+				"public/js/models/speaker.js"
+			],
+			[
+				"speakers",
+				"application/modules/default/controllers/SpeakersController.php"
+			],
+			[
+				"simplem",
+				"library/Garp/Util/SimpleMail.php"
+			],
+			[
+				"simplema",
+				"library/Garp/Util/SimpleMail.php"
+			],
+			[
+				"simplemai",
+				"library/Garp/Util/SimpleMail.php"
+			],
+			[
+				"garpmail",
+				"library/Garp/Util/SimpleMail.php"
+			],
+			[
+				"formele",
+				"library/Zend/Form/Decorator/FormElements.php"
+			],
+			[
+				"garpform",
+				"library/Garp/Form.php"
+			],
+			[
+				"becom",
+				"application/modules/default/views/scripts/sponsors/becomeasponsor.phtml"
+			],
+			[
+				"modelprovider",
+				"application/modules/default/models/Provider.php"
+			],
+			[
+				"modeluser",
+				"garp/application/modules/g/models/User.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"~/Sites/sma/sma.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+		],
+		"width": 881.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 380.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
